@@ -58,6 +58,9 @@
             "production": {
               "buildTarget": "floricultura-angular:build:production"
             },
+            "options":{
+              "proxyConfig": "./app/service/db-json/proxy.conf.json"
+            },
             "development": {
               "buildTarget": "floricultura-angular:build:development"
             }
