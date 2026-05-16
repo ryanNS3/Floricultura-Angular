@@ -1,9 +1,9 @@
-export interface Cliente {
+export interface Produto {
+    id: number;
     nome: string;
-    qtd: number;
     preco: number;
     tipo: string;
-    estoque: number;
+    qtd_estoque: number;
     imagem: string;
 }
 
