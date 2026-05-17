@@ -3,10 +3,11 @@ import { Produto } from "../../../service/@Type/Produto";
 import { HttpClient } from "@angular/common/http";
 import { ProdutoService } from "../../../service/produto/produto-service";
 import { RouterLink } from "@angular/router";
+import { AdminLayout } from "../../../shared/components/layout/admin-layout/admin-layout";
 
 @Component({
   selector: "app-home-admin",
-  imports: [RouterLink],
+  imports: [RouterLink, AdminLayout],
   templateUrl: "./home-admin.html",
   styleUrl: "./home-admin.css",
 })

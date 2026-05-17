@@ -7,5 +7,5 @@ import { Component } from "@angular/core";
   styleUrl: "./primary-button.css",
 })
 export class PrimaryButton {
-  
+   texto: string = "Adicionar nome botão";
 }

@@ -1,0 +1,11 @@
+.botao-primary   {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background: white;
+  border: 1px solid #ff0800;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 14px 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<div class="admin-layout">
+
+    <header class="navbar">
+        <span class="logo">CRM</span>
+        <div class="busca">
+            <img src="assets/search.svg" alt="buscar" width="24" height="24" />
+            <input type="text" placeholder="BUSCAR" />
+        </div>
+        <div class ="notificacoes">
+            <img src="assets/bell.svg" alt="notificações" width="24" height="24" />
+        </div>
+        <div class="navbar-icons">
+            <img src="assets/user.svg" alt="perfil" width="24" height="24" />
+        </div>
+    </header>
+    
+    <aside class="sidebar">
+        <button class="sidebar-btn ativo">
+          <img src="assets/home-cog.svg" alt="home" width="22" height="22" />
+        </button>
+        <button class="sidebar-btn">
+          <img src="assets/chart-bar.svg" alt="relatórios" width="22" height="22" />
+        </button>
+        <button class="sidebar-btn">
+          <img src="assets/settings.svg" alt="configurações" width="22" height="22" />
+        </button>
+
+    </aside>
+    <div class="content">
+
+    <main>
+      <ng-content></ng-content>
+    </main>
+  </div>
+</div>
