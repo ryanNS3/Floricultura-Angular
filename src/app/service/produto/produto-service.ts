@@ -16,7 +16,32 @@ export class ProdutoService {
         return throwError(()=> new Error("Falha ao buscar os produtos"))
       })
     )
-   
+  }
+
+   postProdutos(novoProduto: Produto): Observable<Produto[]>{
+    return  this.httpClient.post<Produto[]>(this.API, novoProduto).pipe(
+      catchError((erro) =>{
+        return throwError(()=> new Error("Falha ao buscar os produtos"))
+      })
+    ) 
+  }
+
+  // Busca um produto específico para preencher o form
+getProdutoPorId(id: string): Observable<Produto> {
+  return this.httpClient.get<Produto>(`${this.API}/${id}`);
+}
+
+// Atualiza o produto completo
+updateProduto(id: string | number, produto: Produto): Observable<Produto> {
+  return this.httpClient.put<Produto>(`${this.API}/${id}`, produto);
+}
+
+   deleteProduto(id: string): Observable<Produto[]>{
+    return this.httpClient.delete<Produto[]>(`${this.API}/${id}`).pipe(
+      catchError((erro) =>{
+        return throwError(()=> new Error("Falha ao buscar os produtos"))
+      })
+    ) 
   }
 
 

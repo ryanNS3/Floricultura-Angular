@@ -1,44 +1,21 @@
 {
   "produto": [
     {
-      "id": 1,
-      "nome": "Buquê de Rosas Vermelhas Clássico",
-      "preco": 149.90,
-      "tipo": "Buquês",
+      "nome": "flor",
+      "preco": 11,
       "qtd_estoque": 10,
-      "imagem": "https://images.exemplo.com/flores/buque-rosas-vermelhas.jpg"
+      "tipo": "Planta",
+      "img": "w",
+      "id": "S_6mSVi7a80"
     },
     {
-      "id": 2,
-      "nome": "Orquídea Phalaenopsis Branca",
-      "preco": 85.00,
-      "tipo": "Plantas de Vaso",
-      "qtd_estoque": 6,
-      "imagem": "https://images.exemplo.com/flores/orquidea-branca.jpg"
-    },
-    {
-      "id": 3,
-      "nome": "Arranjo Girassóis da Manhã",
-      "preco": 120.00,
-      "tipo": "Arranjos",
-      "qtd_estoque": 4,
-      "imagem": "https://images.exemplo.com/flores/arranjo-girassois.jpg"
-    },
-    {
-      "id": 4,
-      "nome": "Vaso de Cerâmica Artesanal",
-      "preco": 45.50,
-      "tipo": "Acessórios",
-      "qtd_estoque": 15,
-      "imagem": "https://images.exemplo.com/flores/vaso-ceramica.jpg"
-    },
-    {
-      "id": 5,
-      "nome": "Lírio da Paz",
-      "preco": 60.00,
-      "tipo": "Plantas de Vaso",
-      "qtd_estoque": 8,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+      "nome": "ee",
+      "preco": 10,
+      "qtd_estoque": 100,
+      "tipo": "Planta",
+      "img": "ww",
+      "id": "gX_nrTmfd8c"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
