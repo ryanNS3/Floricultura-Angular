@@ -4,6 +4,8 @@ import { HomeAdmin } from './features/adminPage/home-admin/home-admin';
 import { LandingPage } from './features/buyPage/landing-page/landing-page';
 import { Login } from './features/auth/login/login';
 import { Cadastro } from './features/auth/cadastro/cadastro';
+import { CriarProduto } from './features/adminPage/criar-produto/criar-produto';
+import { VerProduto } from './features/adminPage/ver-produto/ver-produto';
 
 export const routes: Routes = [
   {
@@ -12,7 +14,7 @@ export const routes: Routes = [
   },
 
   {
-    path: 'homeAdmin',
+    path: 'admin/home',
     component: HomeAdmin
   },
 
@@ -24,6 +26,15 @@ export const routes: Routes = [
   {
     path: 'cadastro',
     component: Cadastro
+  },
+
+  {
+    path: 'admin/home/admin/criarProduto',
+    component: CriarProduto
+  },
+  {
+    path: 'admin/home/admin/verProduto/:id',
+    component: VerProduto
   }
 
 
