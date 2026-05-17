@@ -1,0 +1,16 @@
+<form [formGroup]="criarProdutoForm">
+  <label for="nome">Nome</label>
+  <input formControlName="nome" id="nome" type="text">
+
+  <label for="preco">Preço</label>
+  <input formControlName="preco" type="number" id="preco">
+
+  <label for="qtd_estoque">Estoque inicial</label>
+  <input formControlName="qtd_estoque" type="number" id="qtd_estoque">
+
+  <label for="img">Link da imagem</label>
+  <input formControlName="img" type="text" id="img">
+
+  <!-- Type="button" evita que o form tente dar um "submit" tradicional da página -->
+  <button type="button" (click)="adicionarProduto()">Enviar</button>
+</form>
