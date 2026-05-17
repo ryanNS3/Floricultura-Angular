@@ -2,6 +2,10 @@
 
 
 <main>
+  <div>
+    <h1>Todos os produtos</h1>
+    <button routerLink="admin/criarProduto" >Adicionar produto</button>
+  </div>
   <table>
       <thead>
         <caption>lista de produtos</caption>
@@ -17,22 +21,27 @@
       </thead>
 
       <tbody>
+          @for(produto of listaProdutos(); track produto.id ){
+            <tr>
+              <td>{{produto.id}}</td>
+              <td><input type="text" value={{produto.nome}} disabled></td>
+              <td><input type="text" value={{produto.preco}} disabled></td>
+              <td><input type="text" value={{produto.tipo}} disabled></td>
+              <td><input type="text" value={{produto.qtd_estoque}} disabled></td>
+              <td>
+                <button [routerLink]="['admin/verProduto', produto.id]" >Editar</button>
+              </td>
+              <td>
+                <button (click)="excluirProduto(produto.id)">Deletar</button>
+              </td>
+            </tr>
+          }
+          @empty{
+            <h3>Erro ao carregar os dados</h3>
+          }
 
-        @for(produto of listaProdutos; track produto.id ){
-          <tr>
-            <td>{{produto.id}}</td>
-            <td>{{produto.nome}}</td>
-            <td>{{produto.preco}}</td>
-            <td>{{produto.tipo}}</td>
-            <td>{{produto.qtd_estoque}}</td>
-            <td>
-              <button id="">Editar</button>
-            </td>
-            <td>
-              <button>Deletar</button>
-            </td>
-          </tr>
-        }
+      
+
       
 
       </tbody>
